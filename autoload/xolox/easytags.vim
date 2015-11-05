@@ -901,6 +901,33 @@ call xolox#easytags#define_tagkind({
 
 highlight def link perlFunctionTag Operator
 
+" Objective-C. {{{2
+
+call xolox#easytags#define_tagkind({
+      \ 'filetype': 'objc',
+      \ 'hlgroup': 'objcType',
+      \ 'tagkinds': '[tIi]'})
+
+call xolox#easytags#define_tagkind({
+      \ 'filetype': 'objc',
+      \ 'hlgroup': 'objcEnum',
+      \ 'tagkinds': 'e'})
+
+call xolox#easytags#define_tagkind({
+      \ 'filetype': 'objc',
+      \ 'hlgroup': 'objcPreProc',
+      \ 'tagkinds': '[dM]'})
+
+call xolox#easytags#define_tagkind({
+      \ 'filetype': 'objc',
+      \ 'hlgroup': 'objcMethod',
+      \ 'tagkinds': '[mcf]'})
+
+highlight def link objcPreProc PreProc
+highlight def link objcMethod Function
+highlight def link objcType Identifier
+highlight def link objcEnum Identifier
+
 " }}}
 
 " Restore "cpoptions".

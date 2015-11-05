@@ -135,5 +135,6 @@ call xolox#easytags#filetypes#add_group('html', 'htmldjango')
 call xolox#easytags#filetypes#add_mapping('cpp', 'c++')
 call xolox#easytags#filetypes#add_mapping('cs', 'c#')
 call xolox#easytags#filetypes#add_mapping(exists('g:filetype_asp') ? g:filetype_asp : 'aspvbs', 'asp')
+call xolox#easytags#filetypes#add_mapping('objc', 'ObjectiveC')
 
 " vim: ts=2 sw=2 et
